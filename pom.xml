@@ -31,7 +31,7 @@
         <dependency>
             <artifactId>hibernate-ehcache</artifactId>
             <groupId>org.hibernate</groupId>
-            <version>5.4.6.Final</version>
+            <version>5.4.9.Final</version>
         </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>
