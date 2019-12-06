@@ -1,7 +1,7 @@
-package jpa.spring.hibernate;
+package jpa.hibernate.spring;
 
-import jpa.springboot.hibernate.model.Post;
-import jpa.springboot.hibernate.model.User;
+import jpa.hibernate.model.Post;
+import jpa.hibernate.model.User;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.EntityManager;

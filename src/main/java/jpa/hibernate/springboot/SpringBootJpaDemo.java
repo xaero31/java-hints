@@ -1,7 +1,7 @@
-package jpa.springboot.hibernate;
+package jpa.hibernate.springboot;
 
-import jpa.springboot.hibernate.model.Post;
-import jpa.springboot.hibernate.model.User;
+import jpa.hibernate.model.Post;
+import jpa.hibernate.model.User;
 import org.springframework.beans.BeansException;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

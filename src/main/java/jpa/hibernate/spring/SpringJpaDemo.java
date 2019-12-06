@@ -1,6 +1,6 @@
-package jpa.spring.hibernate;
+package jpa.hibernate.spring;
 
-import jpa.spring.hibernate.config.JPAConfig;
+import jpa.hibernate.spring.config.JPAConfig;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

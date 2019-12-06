@@ -1,4 +1,4 @@
-package jpa.springboot.hibernate.model;
+package jpa.hibernate.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
