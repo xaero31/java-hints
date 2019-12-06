@@ -17,12 +17,12 @@ import java.util.Arrays;
  * created by Nikita_Ermakov at 12/4/2019
  */
 @SpringBootApplication
-public class Main implements CommandLineRunner, ApplicationContextAware {
+public class SpringBootJpaDemo implements CommandLineRunner, ApplicationContextAware {
 
     private static ApplicationContext context;
 
     public static void main(String[] args) {
-        SpringApplication.run(Main.class, args);
+        SpringApplication.run(SpringBootJpaDemo.class, args);
     }
 
     @Override

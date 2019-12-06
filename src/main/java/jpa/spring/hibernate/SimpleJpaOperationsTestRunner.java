@@ -14,13 +14,13 @@ import java.util.List;
  * created by Nikita_Ermakov at 12/4/2019
  */
 @Component
-public class MyRunner {
+public class SimpleJpaOperationsTestRunner {
 
     @PersistenceContext
     private EntityManager entityManager;
 
     @Transactional
-    public void go() {
+    public void run() {
         Post post1 = new Post(0, "post 1", null);
         Post post2 = new Post(0, "post 2", null);
         Post post3 = new Post(0, "post 3", null);

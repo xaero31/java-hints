@@ -7,13 +7,11 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 /**
  * created by Nikita_Ermakov at 12/4/2019
  */
-public class Application {
-
-    private static ApplicationContext context;
+public class SpringJpaDemo {
 
     public static void main(String[] args) {
-        context = new AnnotationConfigApplicationContext(JPAConfig.class);
-        MyRunner runner = context.getBean(MyRunner.class);
-        runner.go();
+        ApplicationContext context = new AnnotationConfigApplicationContext(JPAConfig.class);
+        SimpleJpaOperationsTestRunner runner = context.getBean(SimpleJpaOperationsTestRunner.class);
+        runner.run();
     }
 }
