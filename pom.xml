@@ -16,6 +16,7 @@
 
         <spring.boot.version>2.1.10.RELEASE</spring.boot.version>
         <jersey.version>2.29.1</jersey.version>
+        <axis2.version>1.7.9</axis2.version>
     </properties>
 
     <parent>
@@ -36,6 +37,7 @@
             <version>${spring.boot.version}</version>
         </dependency>
 
+        <!--for rest java ee-->
         <dependency>
             <groupId>org.glassfish.jersey.inject</groupId>
             <artifactId>jersey-hk2</artifactId>
@@ -52,6 +54,35 @@
             <version>${jersey.version}</version>
         </dependency>
 
+        <!--soap java ee-->
+        <dependency>
+            <groupId>org.apache.axis2</groupId>
+            <artifactId>axis2</artifactId>
+            <version>${axis2.version}</version>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.axis2</groupId>
+            <artifactId>axis2-transport-http</artifactId>
+            <version>${axis2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.axis2</groupId>
+            <artifactId>axis2-transport-local</artifactId>
+            <version>${axis2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.axis2</groupId>
+            <artifactId>axis2-adb</artifactId>
+            <version>${axis2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.axis2</groupId>
+            <artifactId>axis2-jaxws</artifactId>
+            <version>${axis2.version}</version>
+        </dependency>
+
+        <!--for default spring-->
         <dependency>
             <artifactId>hibernate-ehcache</artifactId>
             <groupId>org.hibernate</groupId>
@@ -75,4 +106,8 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <finalName>java-hints</finalName>
+    </build>
 </project>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<serviceGroup>
+    <service name="Axis2DemoService" targetNamespace="http://soap.javaee.Axis2DemoService">
+        <description>Axis2 demo service</description>
+
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-only"
+                             class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" />
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out"
+                             class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />
+        </messageReceivers>
+
+        <parameter name="ServiceClass" locked="false">soap.javaee.Axis2DemoService</parameter>
+    </service>
+</serviceGroup>
